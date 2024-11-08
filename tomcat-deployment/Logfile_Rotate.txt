@@ -1,0 +1,71 @@
+sudo apt-get install logrotate
+sudo nano /etc/logrotate.d/tomcat
+----------------------------------
+paste the code into the file 
+
+/opt/tomcat/logs/catalina.out {
+    hourly
+    missingok
+    rotate 7
+    compress
+    delaycompress
+    notifempty
+    create 0640 tomcat tomcat
+    sharedscripts
+    postrotate
+        /bin/systemctl reload tomcat > /dev/null 2>&1 || true
+    endscript
+}
+
+# Archive other Tomcat logs if necessary
+/opt/tomcat/logs/*.log {
+    hourly
+    missingok
+    rotate 7
+    compress
+    delaycompress
+    notifempty
+    create 0640 tomcat tomcat
+    sharedscripts
+    postrotate
+        /bin/systemctl reload tomcat > /dev/null 2>&1 || true
+    endscript
+}
+---------------------------------------------------------------------
+sudo logrotate -f /etc/logrotate.d/tomcat
+
+
+Email notificatoin
+sudo apt-get install mailutils
+sudo nano /opt/tomcat/check_tomcat_status.sh
+------------------------------------------------
+paste 
+
+#!/bin/bash
+
+# Check if Tomcat is running
+if ! systemctl is-active --quiet tomcat; then
+    # Send email if Tomcat is not running
+    echo "Tomcat is not running! Please check the service." | mail -s "Tomcat Alert: Service is Down" your-email@example.com
+fi
+-------------------------------------------------------------------------------------------------------------------------------
+sudo chmod +x /opt/tomcat/check_tomcat_status.sh
+crontab -e
+[choose option] ====> 1 nano
+* * * * * /opt/tomcat/check_tomcat_status.sh
+
+
+
+
+
+
+
+for Root user :
+---------------
+
+sudo crontab -e
+* * * * * /opt/tomcat/check_tomcat_status.sh
+sudo crontab -l
+grep CRON /var/log/syslog
+
+
