@@ -1,5 +1,6 @@
 
 
+
                                                              --How to install Tomcat 8.5 on Ubuntu 18.04  --
 
 1. Check the java version
@@ -28,6 +29,7 @@ sudo ln -s /opt/tomcat/apache-tomcat-* /opt/tomcat/latest
 sudo chmod +x /opt/tomcat/bin/*.sh
 
 10. /etc/systemd/system/tomcat.service
+
 copy this :
 
 [Unit]
@@ -56,15 +58,27 @@ WantedBy=multi-user.target
 
 -------------------------------------------------------
 
+
 11. systemctl: This is the command-line utility used to interact with systemd
+
 sudo systemctl daemon-reload
 sudo systemctl start tomcat
 sudo systemctl enable tomcat
 sudo ufw allow 8080/tcp
+
 12. After installation , localhost:8080 on chrome. Click manager app and use username and password :
 sudo gedit /opt/tomcat/latest/conf/tomcat-users.xml
    	<role rolename="manager-gui"/>
    	<user username="admin" password="admin_password" roles="admin-gui,manager-gui"/>
 
 13. Manager app will open.
+
+
+
+sudo gedit /opt/tomcat/latest/conf/tomcat-users.xml
+<tomcat-users>
+   <role rolename="admin-gui"/>
+   <role rolename="manager-gui"/>
+   <user username="admin" password="admin_password" roles="admin-gui,manager-gui"/>
+</tomcat-users>
 
