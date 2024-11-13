@@ -1,7 +1,10 @@
-sudo apt-get install logrotate
-sudo nano /etc/logrotate.d/tomcat
+1. Install logrotate
+        sudo apt-get install logrotate
+2. Create a tomcat file to rotate
+        sudo nano /etc/logrotate.d/tomcat
+3. It accept the log file only
 ----------------------------------
-paste the code into the file 
+paste the code into the file
 
 /opt/tomcat/logs/catalina.out {
     hourly
@@ -13,33 +16,25 @@ paste the code into the file
     create 0640 tomcat tomcat
     sharedscripts
     postrotate
-        /bin/systemctl reload tomcat > /dev/null 2>&1 || true
+        /home/sruthi/tomcat-deployment/logrotate/tomcat_alert.sh  < path to get any emial alert or notification >
     endscript
 }
 
-# Archive other Tomcat logs if necessary
-/opt/tomcat/logs/*.log {
-    hourly
-    missingok
-    rotate 7
-    compress
-    delaycompress
-    notifempty
-    create 0640 tomcat tomcat
-    sharedscripts
-    postrotate
-        /bin/systemctl reload tomcat > /dev/null 2>&1 || true
-    endscript
-}
 ---------------------------------------------------------------------
-sudo logrotate -f /etc/logrotate.d/tomcat
+ 4. Run the log
+        sudo logrotate -f /etc/logrotate.d/tomcat
+5. check the output and logs
+        sudo logrotate -f -v /etc/logrotate.d/tomcat_alert_log
 
-
-Email notificatoin
-sudo apt-get install mailutils
-sudo nano /opt/tomcat/check_tomcat_status.sh
+FOR GETTING EMAIL NOTIFICATION
+-------------------------------
+1. Install mail
+        sudo apt-get install mailutils
+2.Create a script file
+        sudo nano /opt/tomcat/check_tomcat_status.sh
+3. inside the file
 ------------------------------------------------
-paste 
+paste
 
 #!/bin/bash
 
@@ -49,10 +44,14 @@ if ! systemctl is-active --quiet tomcat; then
     echo "Tomcat is not running! Please check the service." | mail -s "Tomcat Alert: Service is Down" your-email@example.com
 fi
 -------------------------------------------------------------------------------------------------------------------------------
-sudo chmod +x /opt/tomcat/check_tomcat_status.sh
-crontab -e
+4. Change the perimission of the file to execute
+        sudo chmod +x /opt/tomcat/check_tomcat_status.sh
+5. schedule the job
+        crontab -e
 [choose option] ====> 1 nano
-* * * * * /opt/tomcat/check_tomcat_status.sh
+
+6.path to schedule the job
+        * * * * * /opt/tomcat/check_tomcat_status.sh
 
 
 
@@ -67,5 +66,4 @@ sudo crontab -e
 * * * * * /opt/tomcat/check_tomcat_status.sh
 sudo crontab -l
 grep CRON /var/log/syslog
-
 
