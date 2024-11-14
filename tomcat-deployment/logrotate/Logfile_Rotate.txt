@@ -1,4 +1,12 @@
 1. Install logrotate
+
+        sudo apt-get install logrotate
+2. Create a tomcat file to rotate
+        sudo nano /etc/logrotate.d/tomcat
+3. It accept the log file only
+----------------------------------
+paste the code into the file
+=======
 	sudo apt-get install logrotate
 2. Create a tomcat file to rotate
 	sudo nano /etc/logrotate.d/tomcat
@@ -21,20 +29,36 @@ paste the code into the file
 }
 
 ---------------------------------------------------------------------
+
+ 4. Run the log
+        sudo logrotate -f /etc/logrotate.d/tomcat
+5. check the output and logs
+        sudo logrotate -f -v /etc/logrotate.d/tomcat_alert_log
+
  4. Run the log 
 	sudo logrotate -f /etc/logrotate.d/tomcat
 5. check the output and logs
 	sudo logrotate -f -v /etc/logrotate.d/tomcat_alert_log
 
+
 FOR GETTING EMAIL NOTIFICATION
 -------------------------------
 1. Install mail
+
+        sudo apt-get install mailutils
+2.Create a script file
+        sudo nano /opt/tomcat/check_tomcat_status.sh
+3. inside the file
+------------------------------------------------
+paste
+=======
 	sudo apt-get install mailutils
 2.Create a script file
 	sudo nano /opt/tomcat/check_tomcat_status.sh
 3. inside the file
 ------------------------------------------------
 paste 
+
 
 #!/bin/bash
 
@@ -45,6 +69,15 @@ if ! systemctl is-active --quiet tomcat; then
 fi
 -------------------------------------------------------------------------------------------------------------------------------
 4. Change the perimission of the file to execute
+
+        sudo chmod +x /opt/tomcat/check_tomcat_status.sh
+5. schedule the job
+        crontab -e
+[choose option] ====> 1 nano
+
+6.path to schedule the job
+        * * * * * /opt/tomcat/check_tomcat_status.sh
+=======
 	sudo chmod +x /opt/tomcat/check_tomcat_status.sh
 5. schedule the job
 	crontab -e
@@ -59,6 +92,7 @@ fi
 
 
 
+
 for Root user :
 ---------------
 
@@ -66,5 +100,4 @@ sudo crontab -e
 * * * * * /opt/tomcat/check_tomcat_status.sh
 sudo crontab -l
 grep CRON /var/log/syslog
-
 
