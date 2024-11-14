@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tomcat
 Tomcat Setup, Deployment, and Maintenance
 Overview
@@ -40,3 +41,6 @@ Set up a cron job to run the script every few minutes.
 If Tomcat is in a stopped state or fails to start, the script should send an email notification to the team.
 Set up email notifications using an SMTP server or a tool like sendmail.
 Expected Outcome: Logs should rotate and archive every hour, and email notifications should be sent if the Tomcat server fails or stops.
+=======
+# My Project
+>>>>>>> feature/deploy-alert
