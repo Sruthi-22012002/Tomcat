@@ -21,7 +21,7 @@
 
 `           `postrotate 
 
-`                  `systemctl reload tomcat 
+`                  `systemctl restart tomcat 
 
 `           `endscript 
 
@@ -60,7 +60,7 @@
 
 
 
-![](Aspose.Words.04154e10-0c1b-420b-b7c5-dcbc127f5004.001.png)
+![](Aspose.Words.7513ae5b-8640-48d8-906c-93ef5b298801.001.png)
 
 `     `**1**.**Rotation Details**:
 
@@ -80,15 +80,3 @@
 
 1. **Removing Old Logs**:
    1. The oldest rotated log file (catalina.out.8.gz) is removed .
-
-
-
-
-
-
-
-
-
-
-
-
