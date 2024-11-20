@@ -58,6 +58,8 @@ WantedBy=multi-user.target
 
 -------------------------------------------------------
 
+Tomcat start mannually :
+ sudo -u tomcat /opt/tomcat/latest/bin/startup.sh
 
 11. systemctl: This is the command-line utility used to interact with systemd
 
