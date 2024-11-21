@@ -28,5 +28,31 @@
 * The web-data volume will persist data outside of the container and can be shared between containers.
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.003.png)
 
+##  run an Nginx container in detached mode and mount a volume (or directory) from your host machine to the container's web directory, you can use the following command:
+
+```bash
+  sudo docker run -d -v web-data:/usr/share/nginx/html nginx
+```
+![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.004.png)
+
+## This command is used to execute a command inside a running Docker container.
+
+```bash
+  sudo docker exec -it 8f7fe00fb881d74651d9a8d5695b9285b8b18 /bin/bash
+```
+![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.005.png)
+
+## This command is used to execute a command inside a running Docker container.
+
+```bash
+* sudo docker exec -it 8f7fe00fb881d74651d9a8d5695b9285b8b18 /bin/bash
+* cd /usr/share/nginx/html
+* sudo nano index.html
+```
+![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.005.png)
+
+
+
+
 
 
