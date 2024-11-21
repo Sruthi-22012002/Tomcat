@@ -57,16 +57,16 @@
 ## Stop the localhost
 
 ```bash
-sudo docker start <container-id>
+sudo docker stop <container-id>
 ```
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.009.png)
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.010.png)
 
+## Start the container in the <u>localhost:8081</u>
 ```bash
 sudo docker start <container-id>
 ```
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.011.png)
-## Start the container in the <u>localhost:8081</u>
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.012.png)
 
 
