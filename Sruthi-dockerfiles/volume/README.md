@@ -42,12 +42,7 @@
 ```
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.005.png)
 
-## This command is used to execute a command inside a running Docker container.
-
-```bash
-* sudo docker exec -it 8f7fe00fb881d74651d9a8d5695b9285b8b18 /bin/bash
-```
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.005.png)
+## Open the script
 
 ```bash
 * cd /usr/share/nginx/html
@@ -57,6 +52,7 @@
 
 ## change the code 
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.007.png)
+![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.008.png)
 
 ## Stop and start the localhost
 
@@ -64,7 +60,8 @@
 sudo docker stop <container-id>
 sudo docker start <container-id>
 ```
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.008.png)
+![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.009.png)
+![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.010.png)
 
 
 
