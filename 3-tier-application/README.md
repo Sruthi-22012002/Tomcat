@@ -38,11 +38,21 @@ npm start
     Task2 --> End([End])
 ```
 #### Work flow
+# Employee Management Application - Flowchart
+
 ```mermaid
 flowchart TD
-    User[User] -->|Submit form| Frontend[react-hooks-frontend]
-    Frontend -->|Sends data to database| Backend[springboot-backend]
-    Backend -->|Information Stored| Database[(Database)]
+    A[Employee Management Application] --> B[List Employees Page]
+    B --> C[Add Employee Button]
+    C --> D[Open Add Employee Form]
+
+    B --> E[Employee Table]
+    E --> F[Update Button]
+    F --> G[Open Update Employee Form]
+
+    E --> H[Delete Button]
+    H --> I[Confirm Deletion Popup]
+    I --> J[Delete Employee from Database]
 ```
 ## 3 . Roadmap
 ### 3.1 Plan
