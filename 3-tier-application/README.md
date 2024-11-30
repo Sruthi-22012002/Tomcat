@@ -66,11 +66,8 @@ gantt
     Installation       :done, 11-24-2024, 11-24-2024
     Environment setup     :done, 11-24-2024, 11-24-2024
     Build and deploy    : done, 11-25-2024, 11-26-2024
-    section In Progress
-   Create a docker file : active,11-26-2024, 11-27-2024
-    section Planned
-   
-    Testing and Review  : 11-27-2024, 11-27-2024
+   Create a docker file : done,11-26-2024, 11-27-2024
+    Testing and Review  :done,  11-27-2024, 11-27-2024
 ```
 ## Reference
 [Dockerhub](https://hub.docker.com/)
