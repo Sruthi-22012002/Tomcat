@@ -40,7 +40,7 @@ flowchart TD
     B --> E[README.md]
     B --> F[.gitignore]
 
-    c --> G[npm install]
+    C --> G[npm install]
     G --> H[npm run build]
 
     D --> I[target]
