@@ -67,9 +67,8 @@ flowchart TD
 * Testing
 * Documentation
 * Review
-### 3.2 In Progress
-* Installation & Environment setup
-### 3.3 Completed
+
+### 3.2 Completed
 * project overview and plan
    ```mermaid
   gantt
