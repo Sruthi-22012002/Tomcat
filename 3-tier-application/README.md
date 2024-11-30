@@ -40,42 +40,11 @@ flowchart TD
     B --> E[README.md]
     B --> F[.gitignore]
 
-    C --> G[public]
-    C --> H[src]
-    C --> I[package.json]
-    C --> J[README.md]
-    
-    G --> K[favicon.ico]
-    G --> L[index.html]
-    G --> M[logo192.png]
-    G --> N[manifest.json]
+    c --> G[npm install]
+    G --> H[npm run build]
 
-    H --> O[components]
-    H --> P[services]
-    H --> Q[App.js]
-    H --> R[index.js]
-
-    O --> S[AddEmployeeComponent.js]
-    O --> T[ListEmployeeComponent.js]
-    
-    P --> U[EmployeeService.js]
-
-    D --> V[src]
-    D --> W[pom.xml]
-    D --> X[.gitignore]
-    
-    V --> Y[java]
-    V --> Z[resources]
-    
-    Y --> AA[controller]
-    Y --> AB[model]
-    Y --> AC[repository]
-    
-    AA --> AD[EmployeeController.java]
-    AB --> AE[Employee.java]
-    AC --> AF[EmployeeRepository.java]
-    
-    Z --> AG[application.properties]
+    D --> I[target]
+    I -->J[java -jar <*.jar>
 ```
 
 #### Work flow
