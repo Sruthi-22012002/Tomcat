@@ -76,6 +76,7 @@ flowchart TD
     AC --> AF[EmployeeRepository.java]
     
     Z --> AG[application.properties]
+```
 
 #### Work flow
 ```mermaid
