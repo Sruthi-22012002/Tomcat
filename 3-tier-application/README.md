@@ -71,7 +71,8 @@ flowchart TD
 * Installation & Environment setup
 ### 3.3 Completed
 * project overview and plan
-```gantt
+   ```mermaid
+  gantt
     title React App Development Timeline
     dateFormat  MM-DD-YYYY
     
