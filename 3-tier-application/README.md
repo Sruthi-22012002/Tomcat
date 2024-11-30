@@ -29,17 +29,55 @@ npm start
 ## 2 . Architecture Overview
 ### Flow chart
 #### Process flow
-```mermaid
-  flowchart TD
-    Start([Start]) --> Decision{Add employee}
-    Decision -->|Submit| Task1[stored in Database]
-    Decision -->|Cancel| Task2[Back to home]
-    Task1 --> End([End])
-    Task2 --> End([End])
-```
-#### Work flow
-# Employee Management Application - Flowchart
+# Project File Structure - Process Flow
 
+```mermaid
+flowchart TD
+    A[Project Root] --> B[ems-ops-phase-1]
+    
+    B --> C[react-hooks-frontend]
+    B --> D[springboot-backend]
+    B --> E[README.md]
+    B --> F[.gitignore]
+
+    C --> G[public]
+    C --> H[src]
+    C --> I[package.json]
+    C --> J[README.md]
+    
+    G --> K[favicon.ico]
+    G --> L[index.html]
+    G --> M[logo192.png]
+    G --> N[manifest.json]
+
+    H --> O[components]
+    H --> P[services]
+    H --> Q[App.js]
+    H --> R[index.js]
+
+    O --> S[AddEmployeeComponent.js]
+    O --> T[ListEmployeeComponent.js]
+    
+    P --> U[EmployeeService.js]
+
+    D --> V[src]
+    D --> W[pom.xml]
+    D --> X[.gitignore]
+    
+    V --> Y[java]
+    V --> Z[resources]
+    
+    Y --> AA[controller]
+    Y --> AB[model]
+    Y --> AC[repository]
+    
+    AA --> AD[EmployeeController.java]
+    AB --> AE[Employee.java]
+    AC --> AF[EmployeeRepository.java]
+    
+    Z --> AG[application.properties]
+
+#### Work flow
 ```mermaid
 flowchart TD
     A[Employee Management Application] --> B[List Employees Page]
