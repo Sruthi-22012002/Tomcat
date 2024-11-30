@@ -44,7 +44,7 @@ flowchart TD
     G --> H[npm run build]
 
     D --> I[target]
-    I -->J[java -jar <*.jar>
+    I -->J[java -jar <*.jar>]
 ```
 
 #### Work flow
