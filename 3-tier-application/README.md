@@ -51,8 +51,7 @@ flowchart TD
     F --> G[Open Update Employee Form]
 
     E --> H[Delete Button]
-    H --> I[Confirm Deletion Popup]
-    I --> J[Delete Employee from Database]
+    H --> J[Delete Employee from Database]
 ```
 ## 3 . Roadmap
 ### 3.1 Plan
