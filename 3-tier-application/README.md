@@ -37,8 +37,6 @@ flowchart TD
     
     B --> C[react-hooks-frontend]
     B --> D[springboot-backend]
-    B --> E[README.md]
-    B --> F[.gitignore]
 
     C --> G[npm install]
     G --> H[npm run build]
