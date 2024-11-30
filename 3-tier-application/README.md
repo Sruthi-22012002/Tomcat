@@ -71,18 +71,24 @@ flowchart TD
 * Installation & Environment setup
 ### 3.3 Completed
 * project overview and plan
-
-```mermaid
-gantt
-    title React App
+```gantt
+    title React App Development Timeline
     dateFormat  MM-DD-YYYY
-    Completed
-    project overview    :done, 11-24-2024, 11-24-2024
-    Installation        :done, 11-24-2024, 11-24-2024
-    Environment setup    :done, 11-24-2024, 11-24-2024
-    Build and deploy    : done, 11-25-2024, 11-26-2024
-    Create a docker file : done,11-26-2024, 11-27-2024
-    Testing and Review  :done,  11-27-2024, 11-27-2024
+    
+    section Project Overview
+    Project Overview    :done, a1, 11-24-2024, 11-24-2024
+    
+    section Setup and Installation
+    Installation        :done, a2, 11-24-2024, 11-24-2024
+    Environment Setup    :done, a3, 11-24-2024, 11-24-2024
+    
+    section Development and Deployment
+    Build and Deploy    :done, a4, 11-25-2024, 11-26-2024
+    Create Docker File  :done, a5, 11-26-2024, 11-27-2024
+    
+    section Testing and Review
+    Testing and Review  :done, a6, 11-27-2024, 11-27-2024
+
 ```
 ## Reference
 [Dockerhub](https://hub.docker.com/)
