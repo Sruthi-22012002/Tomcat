@@ -76,12 +76,12 @@ flowchart TD
 gantt
     title React App
     dateFormat  MM-DD-YYYY
-    section Completed
-    project overview   :done, 11-24-2024, 11-24-2024
-    Installation       :done, 11-24-2024, 11-24-2024
-    Environment setup     :done, 11-24-2024, 11-24-2024
+    Completed
+    project overview    :done, 11-24-2024, 11-24-2024
+    Installation        :done, 11-24-2024, 11-24-2024
+    Environment setup    :done, 11-24-2024, 11-24-2024
     Build and deploy    : done, 11-25-2024, 11-26-2024
-   Create a docker file : done,11-26-2024, 11-27-2024
+    Create a docker file : done,11-26-2024, 11-27-2024
     Testing and Review  :done,  11-27-2024, 11-27-2024
 ```
 ## Reference
