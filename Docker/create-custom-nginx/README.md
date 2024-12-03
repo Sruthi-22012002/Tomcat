@@ -1,6 +1,6 @@
-## Create a custom Dockerfile
+## 3. Create a custom Dockerfile
 > custom dockerfile is about to run /html file automatically
-### 1. Create a simple index file in /html directory
+### 3.1. Create a simple index file in /html directory
 ```bash
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
 </body>
 </html>
 ```
-#### 2. Create a Nginx Dockefile
+#### 3.2. Create a Nginx Dockefile
 > Use the official Nginx image as the base
 ```bash
     FROM nginx:latest
@@ -29,7 +29,7 @@
 ```bash
    CMD ["nginx", "-g", "daemon off;"]
 ```
-### 3. Build and Run the Custom Nginx Container
+### 3.3 Build and Run the Custom Nginx Container
 > 3.1. Build the Docker image
 ```bash
     docker build -t custom-nginx .
@@ -40,7 +40,7 @@
 ```
 > 3.3. Access the Nginx server
 * Open your browser and go to [localhost:8080](http://localhost:80).
-### 4. sample page ⚠️ Warning: Whatever is on that index.html will come here
+### 3.4. sample page ⚠️ Warning: Whatever is on that index.html will come here
 ![Aspose Words c46c1ede-2ded-4176-b654-cdbce6cebf13 006](https://github.com/user-attachments/assets/6f020f05-70c5-478b-abcd-53bd33e5ce5d)
 
 
