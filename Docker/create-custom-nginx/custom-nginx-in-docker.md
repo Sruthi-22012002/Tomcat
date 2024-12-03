@@ -41,6 +41,7 @@
 > 3.3. Access the Nginx server
 * Open your browser and go to [localhost:8080](http://localhost:80).
 ### 4. Final page
-[nginx](![Uploading Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.006.png…])
+![Aspose Words c46c1ede-2ded-4176-b654-cdbce6cebf13 006](https://github.com/user-attachments/assets/6f020f05-70c5-478b-abcd-53bd33e5ce5d)
+
 
 
