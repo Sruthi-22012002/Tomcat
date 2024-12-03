@@ -24,23 +24,18 @@
 * -it : The -i option allows the container to run interactively (keeps the STDIN open).The -t option allocates a pseudo-TTY (terminal) to the container, making the terminal output readable and interactive.
 * -v web-data:/usr/share/nginx/html : This mounts a Docker volume called web-data to the /usr/share/nginx/html directory inside the container.
 * The web-data volume will persist data outside of the container and can be shared between containers.
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.003.png)
 
-## 4.4 Run an Nginx container in detached mode and mount a volume (or directory) from your host machine to the container's web directory, you can use the following command:
+## 4.4. Run an Nginx container in detached mode and mount a volume (or directory) from your host machine to the container's web directory, you can use the following command:
 
 ```bash
   sudo docker run -d -v web-data:/usr/share/nginx/html nginx
 ```
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.004.png)
-
 ## 4.5. This command is used to execute a command inside a running Docker container.
 
 ```bash
   sudo docker exec -it 8f7fe00fb881d74651d9a8d5695b9285b8b18 /bin/bash
 ```
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.005.png)
-
-## 4.6  Open the script
+## 4.6.  Open the script
 
 ```bash
 * cd /usr/share/nginx/html
@@ -48,7 +43,6 @@
 ```
 ## 4.7. change the code 
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.007.png)
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.008.png)
 
 ## 4.8. Stop the localhost
 
@@ -59,7 +53,6 @@ sudo docker stop <container-id>
 ```bash
 sudo docker start <container-id>
 ```
-![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.011.png)
 ![new vloume:web-data](https://github.com/Ranjitha75388/Tomcat/raw/main/Sruthi-dockerfiles/volume/Aspose.Words.d89a1ccf-1657-4ad3-a9df-32dbbe117dc4.012.png)
 
 ```text
