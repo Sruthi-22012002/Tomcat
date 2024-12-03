@@ -1,9 +1,7 @@
-## 2.1. <b>DOCKER</b>
+## 2. <b>DOCKER</b>
  
-   ### 1. Container
-
-   > Containers are isolated processes for each of your app's components. 
-
+### 2.1. Container
+ > Containers are isolated processes for each of your app's components. 
 ### Container VS Virtual machine
 
 |   Container   |   Virtual machine   |
@@ -14,7 +12,7 @@
 ### Image
    > A container image is a standardized package that includes all of the files, binaries, libraries, and configurations to run a container.
 
-###  Simplified Procedure to Write a Dockerfile
+### 2.2 Simplified Procedure to Write a Dockerfile
 
   > A Dockerfile is a text file that contains a set of instructions to build a Docker image.
   > Create Dockerfile without  extension and type
@@ -65,7 +63,7 @@
 
 docker build -t <name to your image>
 
-### Sample Docker file
+> ### Sample Docker file
 ```bash
    FROM python:3.9
    WORKDIR /app
@@ -75,18 +73,18 @@ docker build -t <name to your image>
    CMD ["python3", "app.py"]
  ```
 
-### Steps to Build & Run:
-#### 1. Build the image
+### 2.3 Steps to Build & Run:
+#### 2.3.1. Build the image
 ```bash
  docker build -t my-app .
  ```
-#### 2. Run the container
+#### 2.3.2 Run the container
 ```bash
  docker run -d -p 5000:5000 my-app
  ```
 > #### ✅ Info :
    > 1. –d  - Run the container in detached mode
    > 2. –p - Map port 5000 on your local machine to port 5000 inside the container.(8080,80 any port)
-### 1.1 [Create a custom Dockerfile](https://github.com/Sruthi-22012002/DevOps-Azure/tree/main/Docker/create-custom-nginx)
+###  [3. Create a custom Dockerfile](https://github.com/Sruthi-22012002/DevOps-Azure/tree/main/Docker/create-custom-nginx)
 
 
