@@ -40,7 +40,7 @@ docker --version
 ```bash
 docker run hello-world
 ```
-<div align="left">
+<div align="right">
   
 ### --> [2. Steps-to-create-Dockerfile](https://github.com/Sruthi-22012002/DevOps-Azure/blob/main/Docker/Steps-to-create-a-Dockerfile/README.md)
 
