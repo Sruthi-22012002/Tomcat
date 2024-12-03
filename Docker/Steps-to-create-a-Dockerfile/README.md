@@ -87,6 +87,6 @@ docker build -t <name to your image>
 > #### ✅ Info :
    > 1. –d  - Run the container in detached mode
    > 2. –p - Map port 5000 on your local machine to port 5000 inside the container.(8080,80 any port)
-### 1.1 [Create a custom Dockerfile]()
+### 1.1 [Create a custom Dockerfile](https://github.com/Sruthi-22012002/DevOps-Azure/tree/main/Docker/create-custom-nginx)
 
 
