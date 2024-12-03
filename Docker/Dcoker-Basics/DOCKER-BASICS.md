@@ -45,7 +45,10 @@
   RUN pip install -r requirements.txt
  ```
 ##### 5.1. requirement.txt
-
+```bash
+  Flask 9.1
+  
+ ```
 #### 6. Expose Ports (optional)
 > Make specific ports accessible.
 ```bash
