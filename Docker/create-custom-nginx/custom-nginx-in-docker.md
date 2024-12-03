@@ -1,20 +1,32 @@
-﻿**Create a custom nginx in docker**
-
-mkdir docker-nginx
-
-1. app.py
-1. requiremennt.txt
-1. index.html
-
-![](Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.001.png)
-
-![](Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.002.png)
-
-![](Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.003.png)
-
-![](Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.004.png)
-
-![](Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.005.png)
-
-![](Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.006.png)
+﻿## Create a custom Dockerfile
+> custom dockerfile is about to run /html file automatically
+### 1. Create a simple index file in /html directory
+```bash
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Custom Nginx!</title>
+</head>
+<body>
+    <h1>Hello from Custom Nginx Container!</h1>
+</body>
+</html>
+```
+#### 2. Create a Nginx Dockefile
+> Use the official Nginx image as the base
+```bash
+    FROM nginx:latest
+```
+> Copy your static files (optional)
+```bash
+    COPY ./html /usr/share/nginx/html
+```
+> Expose port 80 for web traffic
+```bash
+    EXPOSE 80
+```
+> Start Nginx
+```bash
+   CMD ["nginx", "-g", "daemon off;"]
+```
 
