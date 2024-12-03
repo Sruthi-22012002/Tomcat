@@ -46,8 +46,10 @@
  ```
 ##### 5.1. requirement.txt
 ```bash
-  Flask 9.1
-  
+  Flask==2.3.3
+  requests==2.31.0
+  numpy==1.25.0
+  pandas==2.1.2
  ```
 #### 6. Expose Ports (optional)
 > Make specific ports accessible.
