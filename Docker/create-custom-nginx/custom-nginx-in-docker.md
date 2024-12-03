@@ -29,4 +29,16 @@
 ```bash
    CMD ["nginx", "-g", "daemon off;"]
 ```
+### 3. Build and Run the Custom Nginx Container
+> 3.1. Build the Docker image
+```bash
+    docker build -t custom-nginx .
+```
+> 3.2. Run the container
+```bash
+    docker run -d -p 80:80 custom-nginx
+```
+> 3.3. Access the Nginx server:
+Open your browser and go to [localhost:8080](http://localhost:80).
+
 
