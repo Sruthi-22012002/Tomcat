@@ -1,4 +1,4 @@
-﻿## Create a custom Dockerfile
+## Create a custom Dockerfile
 > custom dockerfile is about to run /html file automatically
 ### 1. Create a simple index file in /html directory
 ```bash
@@ -40,5 +40,7 @@
 ```
 > 3.3. Access the Nginx server
 * Open your browser and go to [localhost:8080](http://localhost:80).
-[nginx](
+### 4. Final page
+[nginx](![Uploading Aspose.Words.c46c1ede-2ded-4176-b654-cdbce6cebf13.006.png…])
+
 
