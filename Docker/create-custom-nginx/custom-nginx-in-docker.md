@@ -38,7 +38,7 @@
 ```bash
     docker run -d -p 80:80 custom-nginx
 ```
-> 3.3. Access the Nginx server:
-Open your browser and go to [localhost:8080](http://localhost:80).
-
+> 3.3. Access the Nginx server
+* Open your browser and go to [localhost:8080](http://localhost:80).
+[nginx](
 
