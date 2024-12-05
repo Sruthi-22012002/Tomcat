@@ -12,14 +12,13 @@ jobs:
   build and push:
     runs-on: ubuntu-latest
 
-
     steps:
       # Check out the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: make the script exectable
-        run: sudo chmod +x date.sh
+        run:  chmod +x date.sh
 
       - name: run the script
-        run: sh date.sh
+        run:  sh date.sh
