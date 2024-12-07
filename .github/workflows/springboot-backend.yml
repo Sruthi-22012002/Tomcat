@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code from the repository
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -30,7 +30,8 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/openjdk:17-jdk-slim:latest .
 
-      # Step 5: Push the Docker image to Docker Hub
+      # Step 5: Push the Docker image
       - name: Push the Docker image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/openjdk:17-jdk-slim:latest
+
