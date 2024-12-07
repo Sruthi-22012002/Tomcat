@@ -51,6 +51,10 @@ jobs:
 
 ![image](https://github.com/user-attachments/assets/dd28055c-6328-464d-be43-9669906adc8a)
 
+Topic to covered :
+* Phase 1: [push dockerfile to Dockerhub via commandline](https://github.com/Sruthi-22012002/DevOps-Azure/blob/main/githubActions/push%20docker%20image%20to%20dockerhub.md)
+* Phase 2: [push 3-tier-application dockerfile to dockerhub](https://github.com/Sruthi-22012002/DevOps-Azure/blob/main/githubActions/Push%203-tier-application%20dockerfile%20to%20dockerhub.md)
+
 
 
 
