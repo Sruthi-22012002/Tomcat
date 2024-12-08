@@ -23,11 +23,11 @@ jobs:
 
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
-        working-directory: ./frontend  # Adjust path if `package.json` is in `frontend/`
+        working-directory: /home/sruthi/ems-ops-phase-0/react-hooks-frontend/package.json   # Adjust path if `package.json` is in `frontend/`
 
       - name: Build Frontend
         run: npm run build
-        working-directory: ./frontend
+        working-directory: /home/sruthi/ems-ops-phase-0/react-hooks-frontend/package.json
 
       - name: Dockerize Frontend
         run: |
