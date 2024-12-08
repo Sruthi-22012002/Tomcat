@@ -33,5 +33,5 @@ jobs:
       # Step 5: Push the Docker image to Docker Hub
       - name: Push the Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/nginx-alpine:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/frontend:latest
 
