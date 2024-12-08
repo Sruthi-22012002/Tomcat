@@ -33,5 +33,5 @@ jobs:
       # Step 5: Push the Docker image
       - name: Push the Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/springboot:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/springboot-backend:latest
 
