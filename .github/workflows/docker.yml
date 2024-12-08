@@ -23,11 +23,11 @@ jobs:
 
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
-        working-directory: ./react-hooks-frontend  # Use relative path
+        working-directory: /home/sruthi/ems-ops-phase-0/react-hooks-frontend  # Use relative path
 
       - name: Build Frontend
         run: npm run build
-        working-directory: ./react-hooks-frontend  # Use relative path
+        working-directory: /home/sruthi/ems-ops-phase-0/react-hooks-frontend   # Use relative path
 
       - name: Dockerize Frontend
         run: |
