@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: springboot-backend
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
       # Step 4: Build the Docker image
       - name: Build the Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/springboot:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/springboot-backend:latest .
 
       # Step 5: Push the Docker image
       - name: Push the Docker image
