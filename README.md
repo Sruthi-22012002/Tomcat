@@ -3,6 +3,8 @@
 </div>
 
 ## Devops
+DevOps, short for Development and Operations, is a set of practices, tools, and a cultural philosophy that aims to improve collaboration between software development (Dev) and IT operations (Ops). The primary purpose of DevOps is to shorten the software development lifecycle while ensuring high-quality software delivery.
+
 ```mermaid
 graph TD
  Devops --> Process1[Dev]
