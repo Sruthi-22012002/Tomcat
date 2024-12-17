@@ -30,6 +30,19 @@
 
 ![image](https://github.com/user-attachments/assets/5e9242bd-6100-46d2-a5e9-8afda1e94d30)
 
+<div align="center" style="border: 1px solid black; width: 50%; margin: auto;">
+
+ ### IP Address between the range 0 to 255 = 256
+</div>
+
+> Example :
+
+ip1 = 192.168.1.33
+ip2 = 192.168.1.62
+Subnet calculation of these 2 ip's
+![image](https://github.com/user-attachments/assets/363543d9-3f61-471e-9688-67726ec4f629)
+
+
 
 
 
